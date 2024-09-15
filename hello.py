@@ -1,8 +1,11 @@
 import streamlit as st
-
+import datetime
 from PIL import Image
 
-st.title("Hello world!")
+dt_now = datetime.datetime.now()
+st.write(":orange[Today is]", dt_now.year, dt_now.month, dt_now.day)
+
+st.title("_Hello world!_")
 st.write("You'll never find a rainbow if you're looking down. -Charles Chaplin-")
 st.write("The flower that blooms in adversity is the rarest and most beautiful of all. -Walt Disney-")
 st.write("The special secret of making dreams come true can be summarized in four C's. They are Curiosity, Confidence, Courage and Constancy. -Walt Disney-")
