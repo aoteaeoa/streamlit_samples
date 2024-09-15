@@ -31,17 +31,42 @@ img = Image.open("pumpkins.jpg")
 rotated_img = img.transpose(Image.ROTATE_270)
 rotated_img.save("rotated_pumpkins.jpg")
 
+img = Image.open("lotus.jpg")
+rotated_img = img.transpose(Image.ROTATE_270)
+rotated_img.save("rotated_lotus.jpg")
+
+img = Image.open("yellow flower.jpg")
+rotated_img = img.transpose(Image.ROTATE_270)
+rotated_img.save("rotated_yellow flower.jpg")
+
+img = Image.open("tulips.jpg")
+rotated_img = img.transpose(Image.ROTATE_270)
+rotated_img.save("rotated_tulips.jpg")
+
 
 col1, col2, col3 = st.columns(3) #　画像を並べる
+col4, col5, col6 = st.columns(3)
 
 with col1:
-    st.header("Blue calm lakeside")
+    st.write("Blue calm lakeside")
     st.image("rotated_ocean.jpg", width = 200)
 
 with col2:
-    st.header("Japanese garden")
+    st.write("Japanese garden")
     st.image("rotated_garden.jpg", width = 200)
 
 with col3:
-    st.header("Autumn pumpkins")
+    st.write("Autumn pumpkins")
     st.image("rotated_pumpkins.jpg", width = 200)
+
+with col4:
+    st.write("White lotus")
+    st.image("rotated_lotus.jpg", width = 200)
+
+with col5:
+    st.write("Yellow flower")
+    st.image("rotated_yellow flower.jpg", width = 200)
+
+with col6:
+    st.write("Yellow tulips")
+    st.image("rotated_tulips.jpg", width = 200)
