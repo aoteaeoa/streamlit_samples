@@ -7,32 +7,32 @@ st.write(":orange[Today is]", dt_now.year, dt_now.month, dt_now.day)
 
 st.title("_Hello world!_")
 
-# 画像を開く
-img = Image.open("ocean.jpg")
-# 画像を90度回転させる
-rotated_img = img.transpose(Image.ROTATE_270)
-# 回転した画像を保存する
-rotated_img.save("rotated_ocean.jpg")
+# # 画像を開く
+# img = Image.open("ocean.jpg")
+# # 画像を90度回転させる
+# rotated_img = img.transpose(Image.ROTATE_270)
+# # 回転した画像を保存する
+# rotated_img.save("rotated_ocean.jpg")
 
-img = Image.open("garden.jpg")
-rotated_img = img.transpose(Image.ROTATE_270)
-rotated_img.save("rotated_garden.jpg")
+# img = Image.open("garden.jpg")
+# rotated_img = img.transpose(Image.ROTATE_270)
+# rotated_img.save("rotated_garden.jpg")
 
-img = Image.open("pumpkins.jpg")
-rotated_img = img.transpose(Image.ROTATE_270)
-rotated_img.save("rotated_pumpkins.jpg")
+# img = Image.open("pumpkins.jpg")
+# rotated_img = img.transpose(Image.ROTATE_270)
+# rotated_img.save("rotated_pumpkins.jpg")
 
-img = Image.open("lotus.jpg")
-rotated_img = img.transpose(Image.ROTATE_270)
-rotated_img.save("rotated_lotus.jpg")
+# img = Image.open("lotus.jpg")
+# rotated_img = img.transpose(Image.ROTATE_270)
+# rotated_img.save("rotated_lotus.jpg")
 
-img = Image.open("yellow flower.jpg")
-rotated_img = img.transpose(Image.ROTATE_270)
-rotated_img.save("rotated_yellow flower.jpg")
+# img = Image.open("yellow flower.jpg")
+# rotated_img = img.transpose(Image.ROTATE_270)
+# rotated_img.save("rotated_yellow flower.jpg")
 
-img = Image.open("tulips.jpg")
-rotated_img = img.transpose(Image.ROTATE_270)
-rotated_img.save("rotated_tulips.jpg")
+# img = Image.open("tulips.jpg")
+# rotated_img = img.transpose(Image.ROTATE_270)
+# rotated_img.save("rotated_tulips.jpg")
 
 # 日付毎にメッセージ付き画像表示用データ
 data = [{'message':"You'll never find a rainbow if you're looking down. -Charles Chaplin-", 'image_path':"rotated_tulips.jpg"}, 
@@ -47,8 +47,7 @@ index = today.day % len(data)
 
 selected = data[index]
 message = selected['message']
-image_path = selected['image_path']
-
+image_path ='images_edited/' + selected['image_path']
 
 # メッセージを橙色で大きく表示する
 st.markdown(f"<h2 style='text-align: center; color: orange;'>{message}</h2>", unsafe_allow_html=True)
