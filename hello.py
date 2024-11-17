@@ -59,7 +59,7 @@ with col1:
     st.write("")  # 左側の空白
 
 with col2:
-    st.image(image_path, use_column_width=True)  # 画像を中央に配置し、カラム幅に合わせて表示
+    st.image(image_path, use_container_width=True)  # 画像を中央に配置し、カラム幅に合わせて表示
 
 with col3:
     st.write("")  # 右側の空白
